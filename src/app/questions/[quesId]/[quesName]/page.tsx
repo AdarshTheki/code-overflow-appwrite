@@ -175,7 +175,9 @@ const Page = async ({ params }: { params: { quesId: string; quesName: string } }
                                 src={
                                     storage.getFilePreview(
                                         questionAttachmentBucket,
-                                        question.attachmentId
+                                        question.attachmentId,
+                                        600,
+                                        500
                                     ).href
                                 }
                                 alt={question.title}
